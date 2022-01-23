@@ -1,0 +1,28 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"./generated/FullAdder"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~FullAdder|FullAdder>io_cout",
+    "sources":[
+      "~FullAdder|FullAdder>io_a",
+      "~FullAdder|FullAdder>io_b",
+      "~FullAdder|FullAdder>io_cin"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~FullAdder|FullAdder>io_s",
+    "sources":[
+      "~FullAdder|FullAdder>io_cin",
+      "~FullAdder|FullAdder>io_a",
+      "~FullAdder|FullAdder>io_b"
+    ]
+  }
+]
